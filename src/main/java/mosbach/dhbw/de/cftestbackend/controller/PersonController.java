@@ -1,7 +1,7 @@
-package mosbach.dhbw.cftestbackend.controller;
+package mosbach.dhbw.de.cftestbackend.controller;
 
-import mosbach.dhbw.cftestbackend.model.Person;
-import mosbach.dhbw.cftestbackend.repository.PersonRepository;
+import mosbach.dhbw.de.cftestbackend.model.Person;
+import mosbach.dhbw.de.cftestbackend.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

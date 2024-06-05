@@ -1,4 +1,4 @@
-package mosbach.dhbw.cftestbackend.model;
+package mosbach.dhbw.de.cftestbackend.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
