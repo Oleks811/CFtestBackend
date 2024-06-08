@@ -2,13 +2,13 @@ package mosbach.dhbw.de.cftestbackend.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Person {
     @Id
+    @GeneratedValue
     private Long id;
 
     @JsonProperty ("name")
