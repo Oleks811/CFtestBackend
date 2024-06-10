@@ -1,0 +1,13 @@
+---
+applications:
+- name: CFTestBackend
+  instances: 1
+  host: CFTestBackend{random-word}
+  # create JAR with "mvn package"
+  path: target/CFTestBackend-0.0.1-SNAPSHOT.jar
+  # Necessary
+  random-route: true
+  memory: 1G
+
+  # Create Service with cf create-service appcloud-postgresql11 postgresql-single-small CFTestDB
+  services: CFTestDB
