@@ -10,4 +10,5 @@ applications:
   memory: 1G
 
   # Create Service with cf create-service appcloud-postgresql11 postgresql-single-small CFTestDB
-  services: CFTestDB
+  services:
+  - CFTestDB
