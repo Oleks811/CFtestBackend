@@ -2,7 +2,6 @@ package mosbach.dhbw.de.cftestbackend.controller;
 
 import mosbach.dhbw.de.cftestbackend.model.Person;
 import mosbach.dhbw.de.cftestbackend.repository.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,8 +11,11 @@ import java.util.List;
 @RequestMapping("/persons")
 public class PersonController {
 
-    @Autowired
-    private PersonRepository personRepository;
+    private final PersonRepository personRepository;
+
+    public PersonController(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
 
     @PostMapping
     public Person createPerson(@RequestBody Person person) {

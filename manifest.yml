@@ -8,7 +8,9 @@ applications:
   # Necessary
   random-route: true
   memory: 1G
-
+  #needed for Java 17
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
   # Create Service with cf create-service appcloud-postgresql11 postgresql-single-small CFTestDB
   services:
   - CFTestDB
